@@ -32,25 +32,25 @@
          this.btnExit = new System.Windows.Forms.Button();
          this.txtUltimate = new System.Windows.Forms.TextBox();
          this.txtTicTacToe = new System.Windows.Forms.TextBox();
-         this.picChoice2 = new System.Windows.Forms.PictureBox();
-         this.picChoice3 = new System.Windows.Forms.PictureBox();
-         this.picChoice6 = new System.Windows.Forms.PictureBox();
-         this.picChoice9 = new System.Windows.Forms.PictureBox();
-         this.picChoice5 = new System.Windows.Forms.PictureBox();
-         this.picChoice4 = new System.Windows.Forms.PictureBox();
-         this.picChoice7 = new System.Windows.Forms.PictureBox();
-         this.picChoice8 = new System.Windows.Forms.PictureBox();
-         this.picChoice1 = new System.Windows.Forms.PictureBox();
+         this.grid21 = new System.Windows.Forms.PictureBox();
+         this.grid22 = new System.Windows.Forms.PictureBox();
+         this.grid12 = new System.Windows.Forms.PictureBox();
+         this.grid02 = new System.Windows.Forms.PictureBox();
+         this.grid11 = new System.Windows.Forms.PictureBox();
+         this.grid10 = new System.Windows.Forms.PictureBox();
+         this.grid00 = new System.Windows.Forms.PictureBox();
+         this.grid01 = new System.Windows.Forms.PictureBox();
+         this.grid20 = new System.Windows.Forms.PictureBox();
          this.picTicTacToe = new System.Windows.Forms.PictureBox();
-         ((System.ComponentModel.ISupportInitialize)(this.picChoice2)).BeginInit();
-         ((System.ComponentModel.ISupportInitialize)(this.picChoice3)).BeginInit();
-         ((System.ComponentModel.ISupportInitialize)(this.picChoice6)).BeginInit();
-         ((System.ComponentModel.ISupportInitialize)(this.picChoice9)).BeginInit();
-         ((System.ComponentModel.ISupportInitialize)(this.picChoice5)).BeginInit();
-         ((System.ComponentModel.ISupportInitialize)(this.picChoice4)).BeginInit();
-         ((System.ComponentModel.ISupportInitialize)(this.picChoice7)).BeginInit();
-         ((System.ComponentModel.ISupportInitialize)(this.picChoice8)).BeginInit();
-         ((System.ComponentModel.ISupportInitialize)(this.picChoice1)).BeginInit();
+         ((System.ComponentModel.ISupportInitialize)(this.grid21)).BeginInit();
+         ((System.ComponentModel.ISupportInitialize)(this.grid22)).BeginInit();
+         ((System.ComponentModel.ISupportInitialize)(this.grid12)).BeginInit();
+         ((System.ComponentModel.ISupportInitialize)(this.grid02)).BeginInit();
+         ((System.ComponentModel.ISupportInitialize)(this.grid11)).BeginInit();
+         ((System.ComponentModel.ISupportInitialize)(this.grid10)).BeginInit();
+         ((System.ComponentModel.ISupportInitialize)(this.grid00)).BeginInit();
+         ((System.ComponentModel.ISupportInitialize)(this.grid01)).BeginInit();
+         ((System.ComponentModel.ISupportInitialize)(this.grid20)).BeginInit();
          ((System.ComponentModel.ISupportInitialize)(this.picTicTacToe)).BeginInit();
          this.SuspendLayout();
          // 
@@ -102,113 +102,113 @@
          this.txtTicTacToe.TabIndex = 14;
          this.txtTicTacToe.Text = "Tic Tac Toe";
          // 
-         // picChoice2
+         // grid21
          // 
-         this.picChoice2.BackColor = System.Drawing.Color.White;
-         this.picChoice2.Location = new System.Drawing.Point(258, 103);
-         this.picChoice2.Margin = new System.Windows.Forms.Padding(1);
-         this.picChoice2.Name = "picChoice2";
-         this.picChoice2.Size = new System.Drawing.Size(38, 42);
-         this.picChoice2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-         this.picChoice2.TabIndex = 23;
-         this.picChoice2.TabStop = false;
-         this.picChoice2.Click += new System.EventHandler(this.ButtonClicked);
+         this.grid21.BackColor = System.Drawing.Color.White;
+         this.grid21.Location = new System.Drawing.Point(258, 103);
+         this.grid21.Margin = new System.Windows.Forms.Padding(1);
+         this.grid21.Name = "grid21";
+         this.grid21.Size = new System.Drawing.Size(38, 42);
+         this.grid21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+         this.grid21.TabIndex = 23;
+         this.grid21.TabStop = false;
+         this.grid21.Click += new System.EventHandler(this.ButtonClicked);
          // 
-         // picChoice3
+         // grid22
          // 
-         this.picChoice3.BackColor = System.Drawing.Color.White;
-         this.picChoice3.Location = new System.Drawing.Point(323, 103);
-         this.picChoice3.Margin = new System.Windows.Forms.Padding(1);
-         this.picChoice3.Name = "picChoice3";
-         this.picChoice3.Size = new System.Drawing.Size(38, 42);
-         this.picChoice3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-         this.picChoice3.TabIndex = 22;
-         this.picChoice3.TabStop = false;
-         this.picChoice3.Click += new System.EventHandler(this.ButtonClicked);
+         this.grid22.BackColor = System.Drawing.Color.White;
+         this.grid22.Location = new System.Drawing.Point(323, 103);
+         this.grid22.Margin = new System.Windows.Forms.Padding(1);
+         this.grid22.Name = "grid22";
+         this.grid22.Size = new System.Drawing.Size(38, 42);
+         this.grid22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+         this.grid22.TabIndex = 22;
+         this.grid22.TabStop = false;
+         this.grid22.Click += new System.EventHandler(this.ButtonClicked);
          // 
-         // picChoice6
+         // grid12
          // 
-         this.picChoice6.BackColor = System.Drawing.Color.White;
-         this.picChoice6.Location = new System.Drawing.Point(323, 174);
-         this.picChoice6.Margin = new System.Windows.Forms.Padding(1);
-         this.picChoice6.Name = "picChoice6";
-         this.picChoice6.Size = new System.Drawing.Size(38, 42);
-         this.picChoice6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-         this.picChoice6.TabIndex = 21;
-         this.picChoice6.TabStop = false;
-         this.picChoice6.Click += new System.EventHandler(this.ButtonClicked);
+         this.grid12.BackColor = System.Drawing.Color.White;
+         this.grid12.Location = new System.Drawing.Point(323, 174);
+         this.grid12.Margin = new System.Windows.Forms.Padding(1);
+         this.grid12.Name = "grid12";
+         this.grid12.Size = new System.Drawing.Size(38, 42);
+         this.grid12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+         this.grid12.TabIndex = 21;
+         this.grid12.TabStop = false;
+         this.grid12.Click += new System.EventHandler(this.ButtonClicked);
          // 
-         // picChoice9
+         // grid02
          // 
-         this.picChoice9.BackColor = System.Drawing.Color.White;
-         this.picChoice9.Location = new System.Drawing.Point(323, 245);
-         this.picChoice9.Margin = new System.Windows.Forms.Padding(1);
-         this.picChoice9.Name = "picChoice9";
-         this.picChoice9.Size = new System.Drawing.Size(38, 42);
-         this.picChoice9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-         this.picChoice9.TabIndex = 20;
-         this.picChoice9.TabStop = false;
-         this.picChoice9.Click += new System.EventHandler(this.ButtonClicked);
+         this.grid02.BackColor = System.Drawing.Color.White;
+         this.grid02.Location = new System.Drawing.Point(323, 245);
+         this.grid02.Margin = new System.Windows.Forms.Padding(1);
+         this.grid02.Name = "grid02";
+         this.grid02.Size = new System.Drawing.Size(38, 42);
+         this.grid02.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+         this.grid02.TabIndex = 20;
+         this.grid02.TabStop = false;
+         this.grid02.Click += new System.EventHandler(this.ButtonClicked);
          // 
-         // picChoice5
+         // grid11
          // 
-         this.picChoice5.BackColor = System.Drawing.Color.White;
-         this.picChoice5.Location = new System.Drawing.Point(258, 174);
-         this.picChoice5.Margin = new System.Windows.Forms.Padding(1);
-         this.picChoice5.Name = "picChoice5";
-         this.picChoice5.Size = new System.Drawing.Size(38, 42);
-         this.picChoice5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-         this.picChoice5.TabIndex = 19;
-         this.picChoice5.TabStop = false;
-         this.picChoice5.Click += new System.EventHandler(this.ButtonClicked);
+         this.grid11.BackColor = System.Drawing.Color.White;
+         this.grid11.Location = new System.Drawing.Point(258, 174);
+         this.grid11.Margin = new System.Windows.Forms.Padding(1);
+         this.grid11.Name = "grid11";
+         this.grid11.Size = new System.Drawing.Size(38, 42);
+         this.grid11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+         this.grid11.TabIndex = 19;
+         this.grid11.TabStop = false;
+         this.grid11.Click += new System.EventHandler(this.ButtonClicked);
          // 
-         // picChoice4
+         // grid10
          // 
-         this.picChoice4.BackColor = System.Drawing.Color.White;
-         this.picChoice4.Location = new System.Drawing.Point(195, 174);
-         this.picChoice4.Margin = new System.Windows.Forms.Padding(1);
-         this.picChoice4.Name = "picChoice4";
-         this.picChoice4.Size = new System.Drawing.Size(38, 42);
-         this.picChoice4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-         this.picChoice4.TabIndex = 18;
-         this.picChoice4.TabStop = false;
-         this.picChoice4.Click += new System.EventHandler(this.ButtonClicked);
+         this.grid10.BackColor = System.Drawing.Color.White;
+         this.grid10.Location = new System.Drawing.Point(195, 174);
+         this.grid10.Margin = new System.Windows.Forms.Padding(1);
+         this.grid10.Name = "grid10";
+         this.grid10.Size = new System.Drawing.Size(38, 42);
+         this.grid10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+         this.grid10.TabIndex = 18;
+         this.grid10.TabStop = false;
+         this.grid10.Click += new System.EventHandler(this.ButtonClicked);
          // 
-         // picChoice7
+         // grid00
          // 
-         this.picChoice7.BackColor = System.Drawing.Color.White;
-         this.picChoice7.Location = new System.Drawing.Point(195, 245);
-         this.picChoice7.Margin = new System.Windows.Forms.Padding(1);
-         this.picChoice7.Name = "picChoice7";
-         this.picChoice7.Size = new System.Drawing.Size(38, 42);
-         this.picChoice7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-         this.picChoice7.TabIndex = 17;
-         this.picChoice7.TabStop = false;
-         this.picChoice7.Click += new System.EventHandler(this.ButtonClicked);
+         this.grid00.BackColor = System.Drawing.Color.White;
+         this.grid00.Location = new System.Drawing.Point(195, 245);
+         this.grid00.Margin = new System.Windows.Forms.Padding(1);
+         this.grid00.Name = "grid00";
+         this.grid00.Size = new System.Drawing.Size(38, 42);
+         this.grid00.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+         this.grid00.TabIndex = 17;
+         this.grid00.TabStop = false;
+         this.grid00.Click += new System.EventHandler(this.ButtonClicked);
          // 
-         // picChoice8
+         // grid01
          // 
-         this.picChoice8.BackColor = System.Drawing.Color.White;
-         this.picChoice8.Location = new System.Drawing.Point(258, 245);
-         this.picChoice8.Margin = new System.Windows.Forms.Padding(1);
-         this.picChoice8.Name = "picChoice8";
-         this.picChoice8.Size = new System.Drawing.Size(38, 42);
-         this.picChoice8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-         this.picChoice8.TabIndex = 16;
-         this.picChoice8.TabStop = false;
-         this.picChoice8.Click += new System.EventHandler(this.ButtonClicked);
+         this.grid01.BackColor = System.Drawing.Color.White;
+         this.grid01.Location = new System.Drawing.Point(258, 245);
+         this.grid01.Margin = new System.Windows.Forms.Padding(1);
+         this.grid01.Name = "grid01";
+         this.grid01.Size = new System.Drawing.Size(38, 42);
+         this.grid01.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+         this.grid01.TabIndex = 16;
+         this.grid01.TabStop = false;
+         this.grid01.Click += new System.EventHandler(this.ButtonClicked);
          // 
-         // picChoice1
+         // grid20
          // 
-         this.picChoice1.BackColor = System.Drawing.Color.White;
-         this.picChoice1.Location = new System.Drawing.Point(195, 103);
-         this.picChoice1.Margin = new System.Windows.Forms.Padding(1);
-         this.picChoice1.Name = "picChoice1";
-         this.picChoice1.Size = new System.Drawing.Size(38, 42);
-         this.picChoice1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-         this.picChoice1.TabIndex = 15;
-         this.picChoice1.TabStop = false;
-         this.picChoice1.Click += new System.EventHandler(this.ButtonClicked);
+         this.grid20.BackColor = System.Drawing.Color.White;
+         this.grid20.Location = new System.Drawing.Point(195, 103);
+         this.grid20.Margin = new System.Windows.Forms.Padding(1);
+         this.grid20.Name = "grid20";
+         this.grid20.Size = new System.Drawing.Size(38, 42);
+         this.grid20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+         this.grid20.TabIndex = 15;
+         this.grid20.TabStop = false;
+         this.grid20.Click += new System.EventHandler(this.ButtonClicked);
          // 
          // picTicTacToe
          // 
@@ -230,15 +230,15 @@
          this.BackgroundImage = global::TicTacToev1._0.Resource1.TicTacToeBackground2;
          this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
          this.ClientSize = new System.Drawing.Size(609, 560);
-         this.Controls.Add(this.picChoice2);
-         this.Controls.Add(this.picChoice3);
-         this.Controls.Add(this.picChoice6);
-         this.Controls.Add(this.picChoice9);
-         this.Controls.Add(this.picChoice5);
-         this.Controls.Add(this.picChoice4);
-         this.Controls.Add(this.picChoice7);
-         this.Controls.Add(this.picChoice8);
-         this.Controls.Add(this.picChoice1);
+         this.Controls.Add(this.grid21);
+         this.Controls.Add(this.grid22);
+         this.Controls.Add(this.grid12);
+         this.Controls.Add(this.grid02);
+         this.Controls.Add(this.grid11);
+         this.Controls.Add(this.grid10);
+         this.Controls.Add(this.grid00);
+         this.Controls.Add(this.grid01);
+         this.Controls.Add(this.grid20);
          this.Controls.Add(this.txtTicTacToe);
          this.Controls.Add(this.txtUltimate);
          this.Controls.Add(this.btnExit);
@@ -248,15 +248,15 @@
          this.Margin = new System.Windows.Forms.Padding(1);
          this.Name = "TicTacToeForm";
          this.Text = "TicTacToe";
-         ((System.ComponentModel.ISupportInitialize)(this.picChoice2)).EndInit();
-         ((System.ComponentModel.ISupportInitialize)(this.picChoice3)).EndInit();
-         ((System.ComponentModel.ISupportInitialize)(this.picChoice6)).EndInit();
-         ((System.ComponentModel.ISupportInitialize)(this.picChoice9)).EndInit();
-         ((System.ComponentModel.ISupportInitialize)(this.picChoice5)).EndInit();
-         ((System.ComponentModel.ISupportInitialize)(this.picChoice4)).EndInit();
-         ((System.ComponentModel.ISupportInitialize)(this.picChoice7)).EndInit();
-         ((System.ComponentModel.ISupportInitialize)(this.picChoice8)).EndInit();
-         ((System.ComponentModel.ISupportInitialize)(this.picChoice1)).EndInit();
+         ((System.ComponentModel.ISupportInitialize)(this.grid21)).EndInit();
+         ((System.ComponentModel.ISupportInitialize)(this.grid22)).EndInit();
+         ((System.ComponentModel.ISupportInitialize)(this.grid12)).EndInit();
+         ((System.ComponentModel.ISupportInitialize)(this.grid02)).EndInit();
+         ((System.ComponentModel.ISupportInitialize)(this.grid11)).EndInit();
+         ((System.ComponentModel.ISupportInitialize)(this.grid10)).EndInit();
+         ((System.ComponentModel.ISupportInitialize)(this.grid00)).EndInit();
+         ((System.ComponentModel.ISupportInitialize)(this.grid01)).EndInit();
+         ((System.ComponentModel.ISupportInitialize)(this.grid20)).EndInit();
          ((System.ComponentModel.ISupportInitialize)(this.picTicTacToe)).EndInit();
          this.ResumeLayout(false);
          this.PerformLayout();
@@ -269,15 +269,15 @@
       private System.Windows.Forms.PictureBox picTicTacToe;
       private System.Windows.Forms.TextBox txtUltimate;
       private System.Windows.Forms.TextBox txtTicTacToe;
-      private System.Windows.Forms.PictureBox picChoice1;
-      private System.Windows.Forms.PictureBox picChoice8;
-      private System.Windows.Forms.PictureBox picChoice7;
-      private System.Windows.Forms.PictureBox picChoice4;
-      private System.Windows.Forms.PictureBox picChoice5;
-      private System.Windows.Forms.PictureBox picChoice9;
-      private System.Windows.Forms.PictureBox picChoice6;
-      private System.Windows.Forms.PictureBox picChoice3;
-      private System.Windows.Forms.PictureBox picChoice2;
+      private System.Windows.Forms.PictureBox grid20;
+      private System.Windows.Forms.PictureBox grid01;
+      private System.Windows.Forms.PictureBox grid00;
+      private System.Windows.Forms.PictureBox grid10;
+      private System.Windows.Forms.PictureBox grid11;
+      private System.Windows.Forms.PictureBox grid02;
+      private System.Windows.Forms.PictureBox grid12;
+      private System.Windows.Forms.PictureBox grid22;
+      private System.Windows.Forms.PictureBox grid21;
    }
 }
 

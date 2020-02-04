@@ -63,26 +63,26 @@ namespace TicTacToev1._0
        
 
          //clearing the X's and O's
-         picChoice1.Image = null;
-         picChoice2.Image = null;
-         picChoice3.Image = null;
-         picChoice4.Image = null;
-         picChoice5.Image = null;
-         picChoice6.Image = null;
-         picChoice7.Image = null;
-         picChoice8.Image = null;
-         picChoice9.Image = null;
+         grid20.Image = null;
+         grid21.Image = null;
+         grid22.Image = null;
+         grid10.Image = null;
+         grid11.Image = null;
+         grid12.Image = null;
+         grid00.Image = null;
+         grid01.Image = null;
+         grid02.Image = null;
 
          //Re enabling the picture boxes 
-         picChoice1.Enabled = true;
-         picChoice2.Enabled = true;
-         picChoice3.Enabled = true;
-         picChoice4.Enabled = true;
-         picChoice5.Enabled = true;
-         picChoice6.Enabled = true;
-         picChoice7.Enabled = true;
-         picChoice8.Enabled = true;
-         picChoice9.Enabled = true;
+         grid20.Enabled = true;
+         grid21.Enabled = true;
+         grid22.Enabled = true;
+         grid10.Enabled = true;
+         grid11.Enabled = true;
+         grid12.Enabled = true;
+         grid00.Enabled = true;
+         grid01.Enabled = true;
+         grid02.Enabled = true;
 
 
       }
