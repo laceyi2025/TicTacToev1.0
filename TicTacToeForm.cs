@@ -22,69 +22,82 @@ namespace TicTacToev1._0
    {
 
       int turnCounter;
-    
+
+      int[,] theBoard = new int[3, 3];
 
 
       public TicTacToeForm()
       {
          InitializeComponent();
       }
-      
+
+      //Set x or o based on whose turn it is
+      private Bitmap SetImage()
+      {
+         return (turnCounter == 0) ? Resource1.x2 : Resource1.o4;
+      }
+
+
       private void ButtonClicked(object sender, EventArgs e)
       {
          //Cast object 
          PictureBox xOrOButton = (PictureBox)sender;
 
-         //Decide which player's (X or O) turn it is. 
-         if (turnCounter == 0)
-         {
-            xOrOButton.Image = Resource1.x2;
-            
-            turnCounter++;
-         }
-         else
-         {
-            xOrOButton.Image = Resource1.o4;
-            turnCounter--;
-         }
-
-         //Disable button upon getting clicked so no change can occur
-         xOrOButton.Enabled = false;
+         int row = int.Parse(xOrOButton.Name.Substring(4, 1));
+         int column = int.Parse(xOrOButton.Name.Substring(5, 1));
 
          
 
+         //Decide which player's (X or O) turn it is. 
+         if (turnCounter == 0)
+         {
+            xOrOButton.Image = SetImage();
+
+            theBoard[row, column] = 10;
+         }
+         else
+         {
+            xOrOButton.Image = SetImage();
+
+            theBoard[row, column] = 100;
+
+         
+         }
+
+         xOrOButton.Enabled = false;
       }
 
+      //reset turn back to player 1 (x)
+      private void ResetTurnCounter()
+      {
+         turnCounter = 0;
+      }
+
+      //mass enable or disable the picture box when clicked or when reset
+      private void MassPitcureBoxEnableorDisable(bool howToSet)
+      {
+         foreach (Control controlUsed in Controls)
+         {
+            if (controlUsed is PictureBox) controlUsed.Enabled = howToSet;
+         }
+      }
+
+      //clearing images when game reset
+      private void MassSetPictureImage()
+      {
+         foreach (Control controlUsed in Controls)
+         {
+            if (controlUsed is PictureBox)
+            {
+               ((PictureBox)controlUsed).Image = null;
+            }
+         }
+      }
       private void btnReset_Click(object sender, EventArgs e)
       {
-         //restting the turn to begginning 
-         turnCounter = 0;
-
-       
-
-         //clearing the X's and O's
-         grid20.Image = null;
-         grid21.Image = null;
-         grid22.Image = null;
-         grid10.Image = null;
-         grid11.Image = null;
-         grid12.Image = null;
-         grid00.Image = null;
-         grid01.Image = null;
-         grid02.Image = null;
-
-         //Re enabling the picture boxes 
-         grid20.Enabled = true;
-         grid21.Enabled = true;
-         grid22.Enabled = true;
-         grid10.Enabled = true;
-         grid11.Enabled = true;
-         grid12.Enabled = true;
-         grid00.Enabled = true;
-         grid01.Enabled = true;
-         grid02.Enabled = true;
-
-
+         ResetTurnCounter();
+         MassPitcureBoxEnableorDisable(true);
+         MassSetPictureImage();
       }
 
       private void btnExit_Click(object sender, EventArgs e)

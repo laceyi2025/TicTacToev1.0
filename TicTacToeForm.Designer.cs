@@ -105,7 +105,7 @@
          // grid21
          // 
          this.grid21.BackColor = System.Drawing.Color.White;
-         this.grid21.Location = new System.Drawing.Point(258, 103);
+         this.grid21.Location = new System.Drawing.Point(253, 109);
          this.grid21.Margin = new System.Windows.Forms.Padding(1);
          this.grid21.Name = "grid21";
          this.grid21.Size = new System.Drawing.Size(38, 42);
@@ -117,7 +117,7 @@
          // grid22
          // 
          this.grid22.BackColor = System.Drawing.Color.White;
-         this.grid22.Location = new System.Drawing.Point(323, 103);
+         this.grid22.Location = new System.Drawing.Point(312, 109);
          this.grid22.Margin = new System.Windows.Forms.Padding(1);
          this.grid22.Name = "grid22";
          this.grid22.Size = new System.Drawing.Size(38, 42);
@@ -129,7 +129,7 @@
          // grid12
          // 
          this.grid12.BackColor = System.Drawing.Color.White;
-         this.grid12.Location = new System.Drawing.Point(323, 174);
+         this.grid12.Location = new System.Drawing.Point(312, 174);
          this.grid12.Margin = new System.Windows.Forms.Padding(1);
          this.grid12.Name = "grid12";
          this.grid12.Size = new System.Drawing.Size(38, 42);
@@ -141,7 +141,7 @@
          // grid02
          // 
          this.grid02.BackColor = System.Drawing.Color.White;
-         this.grid02.Location = new System.Drawing.Point(323, 245);
+         this.grid02.Location = new System.Drawing.Point(312, 232);
          this.grid02.Margin = new System.Windows.Forms.Padding(1);
          this.grid02.Name = "grid02";
          this.grid02.Size = new System.Drawing.Size(38, 42);
@@ -153,7 +153,7 @@
          // grid11
          // 
          this.grid11.BackColor = System.Drawing.Color.White;
-         this.grid11.Location = new System.Drawing.Point(258, 174);
+         this.grid11.Location = new System.Drawing.Point(253, 174);
          this.grid11.Margin = new System.Windows.Forms.Padding(1);
          this.grid11.Name = "grid11";
          this.grid11.Size = new System.Drawing.Size(38, 42);
@@ -177,19 +177,20 @@
          // grid00
          // 
          this.grid00.BackColor = System.Drawing.Color.White;
-         this.grid00.Location = new System.Drawing.Point(195, 245);
+         this.grid00.Location = new System.Drawing.Point(195, 232);
          this.grid00.Margin = new System.Windows.Forms.Padding(1);
          this.grid00.Name = "grid00";
          this.grid00.Size = new System.Drawing.Size(38, 42);
          this.grid00.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
          this.grid00.TabIndex = 17;
          this.grid00.TabStop = false;
+         this.grid00.Tag = "00";
          this.grid00.Click += new System.EventHandler(this.ButtonClicked);
          // 
          // grid01
          // 
          this.grid01.BackColor = System.Drawing.Color.White;
-         this.grid01.Location = new System.Drawing.Point(258, 245);
+         this.grid01.Location = new System.Drawing.Point(253, 232);
          this.grid01.Margin = new System.Windows.Forms.Padding(1);
          this.grid01.Name = "grid01";
          this.grid01.Size = new System.Drawing.Size(38, 42);
@@ -201,7 +202,7 @@
          // grid20
          // 
          this.grid20.BackColor = System.Drawing.Color.White;
-         this.grid20.Location = new System.Drawing.Point(195, 103);
+         this.grid20.Location = new System.Drawing.Point(195, 109);
          this.grid20.Margin = new System.Windows.Forms.Padding(1);
          this.grid20.Name = "grid20";
          this.grid20.Size = new System.Drawing.Size(38, 42);
@@ -212,11 +213,11 @@
          // 
          // picTicTacToe
          // 
-         this.picTicTacToe.Image = global::TicTacToev1._0.Resource1.ticTacToeBackground1;
-         this.picTicTacToe.Location = new System.Drawing.Point(172, 75);
+         this.picTicTacToe.BackgroundImage = global::TicTacToev1._0.Resource1.ticTacToeBackground1;
+         this.picTicTacToe.Location = new System.Drawing.Point(173, 93);
          this.picTicTacToe.Margin = new System.Windows.Forms.Padding(1);
          this.picTicTacToe.Name = "picTicTacToe";
-         this.picTicTacToe.Size = new System.Drawing.Size(210, 239);
+         this.picTicTacToe.Size = new System.Drawing.Size(210, 202);
          this.picTicTacToe.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
          this.picTicTacToe.TabIndex = 12;
          this.picTicTacToe.TabStop = false;
