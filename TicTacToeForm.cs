@@ -20,9 +20,9 @@ namespace TicTacToev1._0
 
    public partial class TicTacToeForm : Form
    {
-
+      //Defining the global variables and global array 
       int turnCounter;
-
+      int numberofTurns = 0;
       int[,] theBoard = new int[3, 3];
 
 
@@ -37,54 +37,76 @@ namespace TicTacToev1._0
          return (turnCounter == 0) ? Resource1.x2 : Resource1.o4;
       }
 
-      private int sumOfPictureBoxRow(int rowAmount, ref int[,] amountToCheck)
+      //Add the value of each row to be used in checking for winner 
+      private int sumOfPictureBoxRow(int rowAmount)
       {
          int sum = 0;
 
-         for (int column = 0; column < amountToCheck.GetLength(1); column++)
+         for (int column = 0; column < theBoard.GetLength(1); column++)
          {
-            sum += amountToCheck[rowAmount, column];
+            sum += theBoard[rowAmount, column];
          }
 
          return sum;
       }
 
-      private int sumOfPictureBoxColumn(int columnAmount, ref int[,] amountToCheck)
+      //Add the value of each Column to be used in checking for winner
+      private int sumOfPictureBoxColumn(int columnAmount)
       {
          int sum = 0;
 
-         for (int row = 0; row < amountToCheck.GetLength(1); row++)
+         for (int row = 0; row < theBoard.GetLength(1); row++)
          {
-            sum += amountToCheck[row, columnAmount];
+            sum += theBoard[row, columnAmount];
          }
 
          return sum;
       }
 
-
-      private void CheckForWinner(int amountToCheck)
+      //check for winner based on the sums of above procedures and the sum of each diagonal 
+      private bool CheckForWinner(int row, int column)
       {
-
-         sumOfPictureBoxRow(0, ref theBoard);
-         sumOfPictureBoxRow(1, ref theBoard);
-         sumOfPictureBoxRow(2, ref theBoard);
-         sumOfPictureBoxColumn(0, ref theBoard);
-         sumOfPictureBoxColumn(1, ref theBoard);
-         sumOfPictureBoxColumn(2, ref theBoard);
-
-         if (amountToCheck == 30)
+         if (sumOfPictureBoxRow(row) == 30 || sumOfPictureBoxRow(row) == 300)
          {
-            MessageBox.Show("X is the WINNER!!!!!");
-            MassPitcureBoxEnableorDisable(false);
+            return true;
          }
-         else if (amountToCheck == 300)
+         else if (sumOfPictureBoxColumn(column) == 30 || sumOfPictureBoxColumn(column) == 300)
          {
-            MessageBox.Show("O is the WINNER!!!!!");
-            MassPitcureBoxEnableorDisable(false);
+            return true;
          }
-
+         else if (theBoard[0, 0] + theBoard[1, 1] + theBoard[2, 2] == 30 || theBoard[0, 0] + theBoard[1, 1] + theBoard[2, 2] == 300)
+         {
+            return true;
+         }
+         else if (theBoard[0, 2] + theBoard[1, 1] + theBoard[2, 0] == 30 || theBoard[0, 2] + theBoard[1, 1] + theBoard[2, 0] == 300)
+         {
+            return true;
+         }
+         else
+         {
+            return false;
+         }
       }
 
+      //set the value of each turn or letter to 10 or 100
+      private int SetValue()
+      {
+         return (turnCounter == 0) ? 10 : 100;
+      }
+
+      // set the turn count for each player
+      private int NextPlayer()
+      {
+         return (turnCounter == 0) ? 1 : 0;
+      }
+
+      // announce who won based on whose turn it was
+      private string AnnounceWinner()
+      {
+         return (turnCounter == 0) ? "X is the WINNER!!!!!!" : "O is the WINNER!!!!!!";
+      }
+
+      //extract row and column of each clicked button and call all procedures made to make the game check for winners and change players if no winner is found
       private void ButtonClicked(object sender, EventArgs e)
       {
          //Cast object 
@@ -93,29 +115,25 @@ namespace TicTacToev1._0
          int row = int.Parse(xOrOButton.Name.Substring(4, 1));
          int column = int.Parse(xOrOButton.Name.Substring(5, 1));
 
-         
+         xOrOButton.Image = SetImage();
+         theBoard[row, column] = SetValue();
+         xOrOButton.Enabled = false;
 
-         //Decide which player's (X or O) turn it is. 
-         if (turnCounter == 0)
+         if (CheckForWinner(row, column))
          {
-            xOrOButton.Image = SetImage();
-
-            theBoard[row, column] = 10;
-
-            
-
-
+            MessageBox.Show(AnnounceWinner());
+            MassPitcureBoxEnableorDisable(false);
+         }
+         //Show that there was no winner
+         else if (numberofTurns == 8)
+         {
+            MessageBox.Show("There was a DRAW!!!!!!");
          }
          else
          {
-            xOrOButton.Image = SetImage();
-
-            theBoard[row, column] = 100;
-
-         
+            turnCounter = NextPlayer();
+            numberofTurns++;
          }
-
-         xOrOButton.Enabled = false;
       }
 
       //reset turn back to player 1 (x)
@@ -144,11 +162,27 @@ namespace TicTacToev1._0
             }
          }
       }
+
+      //reset the array when game is reset
+      private void FillWithZeros()
+      {
+         for (int row = 0; row < theBoard.GetLength(0); row++)
+         {
+            for (int column = 0; column < theBoard.GetLength(1); column++)
+            {
+               theBoard[row, column] = 0;
+            }
+         }
+      }
+
+      //upon reset button click reset the whole bpoard with blank picture, enabled buttons, and a reset array
       private void btnReset_Click(object sender, EventArgs e)
       {
          ResetTurnCounter();
          MassPitcureBoxEnableorDisable(true);
          MassSetPictureImage();
+         FillWithZeros();
+         numberofTurns = 0;
       }
 
       private void btnExit_Click(object sender, EventArgs e)
